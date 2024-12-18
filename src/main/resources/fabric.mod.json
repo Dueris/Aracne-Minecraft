@@ -1,0 +1,28 @@
+{
+  "schemaVersion": 1,
+  "id": "arcane",
+  "version": "${version}",
+  "name": "Arcane",
+  "description": "magic stuff",
+  "authors": [
+    "Dueris"
+  ],
+  "contact": {},
+  "license": "All-Rights-Reserved",
+  "entrypoints": {
+    "main": [
+      "io.github.dueris.arcane.Arcane"
+    ],
+    "client": [
+      "io.github.dueris.arcane.ArcaneClient"
+    ]
+  },
+  "mixins": [
+    "arcane.mixins.json"
+  ],
+  "depends": {
+    "fabricloader": ">=${loader_version}",
+    "fabric": "*",
+    "minecraft": "${minecraft_version}"
+  }
+}
